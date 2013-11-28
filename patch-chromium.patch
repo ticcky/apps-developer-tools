@@ -1,0 +1,50 @@
+Index: chrome/common/extensions/api/_api_features.json
+===================================================================
+--- chrome/common/extensions/api/_api_features.json	(revision 237623)
++++ chrome/common/extensions/api/_api_features.json	(working copy)
+@@ -621,7 +621,6 @@
+   },
+   "tabs": {
+     "channel": "stable",
+-    "extension_types": ["extension", "legacy_packaged_app"],
+     "contexts": ["blessed_extension"]
+   },
+   "terminalPrivate": {
+Index: chrome/common/extensions/api/_permission_features.json
+===================================================================
+--- chrome/common/extensions/api/_permission_features.json	(revision 237623)
++++ chrome/common/extensions/api/_permission_features.json	(working copy)
+@@ -210,7 +210,10 @@
+   ],
+   "debugger": {
+     "channel": "stable",
+-    "extension_types": ["extension", "legacy_packaged_app"]
++    "extension_types": ["extension", "legacy_packaged_app", "platform_app"],
++    "whitelist": [
++        "90113DA9516526D24DAF156C629CC41C049E8882"
++    ]
+   },
+   "developerPrivate": {
+     "channel": "stable",
+@@ -223,7 +226,8 @@
+         // TODO(grv) : clean up once after publish.
+         "FA0501B579070BB9CBD4FCAEC8CB0EDF22BA2F04", // Apps Editor published.
+         "4A4EA121622FCA3D78ED2AB534197F43D7189EE0", // Spark nightly build
+-        "9FDE6E7F06FCFA11D9A05041C7FF6D8AE662F5D1"  // Spark release
++        "9FDE6E7F06FCFA11D9A05041C7FF6D8AE662F5D1",  // Spark release
++        "90113DA9516526D24DAF156C629CC41C049E8882"
+     ]
+   },
+   "devtools": {
+@@ -754,7 +758,10 @@
+   },
+   "tabs": {
+     "channel": "stable",
+-    "extension_types": ["extension", "legacy_packaged_app"]
++    "extension_types": ["extension", "legacy_packaged_app", "platform_app"],
++    "whitelist": [
++      "90113DA9516526D24DAF156C629CC41C049E8882"
++    ]
+   },
+   "tabCapture": {
+     "channel": "stable",
