@@ -244,6 +244,9 @@ cr.define('apps_dev_tool', function() {
       if (item.allow_reload)
         this.setReloadLink_(item, node);
 
+      // The 'Lint' link.
+      this.setLintLink_(item, node);
+
       if (item.type == 'packaged_app') {
         // The 'Launch' link.
         var launch = node.querySelector('.launch-link');
@@ -353,6 +356,19 @@ cr.define('apps_dev_tool', function() {
       var permissions = el.querySelector('.permissions-link');
       permissions.addEventListener('click', function(e) {
         chrome.developerPrivate.showPermissionsDialog(item.id);
+      });
+    },
+
+    /**
+     * Sets the lint link handler.
+     * @param {!Object} item A dictionary of item metadata.
+     * @param {!HTMLElement} el HTML element containing all items.
+     * @private
+     */
+    setLintLink_: function(item, el) {
+      var lint = el.querySelector('.lint-link');
+      lint.addEventListener('click', function(e) {
+        chrome.app.window.create("lint.html#" + item.id);
       });
     },
 

@@ -1,0 +1,94 @@
+span#recording {
+  color: red;
+  font-weight: bold;
+  font-size: 24px;
+  vertical-align: middle;
+}
+
+span#recording span.bullet {
+    font-size: 52px;
+}
+
+#recording_table {
+  height: 80px;
+}
+
+#lint .tab {
+  padding: 25px;
+}
+
+pre#results {
+  width: 600px;
+  background-color: #EEE;
+  border: 1px solid #666;
+  padding: 10px;
+}
+
+.title {
+  -webkit-user-select: text;
+  color: rgb(48, 57, 66);
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+}
+
+body#lint {
+  padding: 50px;
+}
+
+.text-muted {
+  color: #999;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table.table-bordered td, table.table-bordered th {
+  border: 1px solid #666;
+  padding: 4px;
+}
+
+table.table-bordered th {
+  background-color: #EEE;
+}
+
+div.question {
+  border: 1px solid #666;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: #FFB;
+  width: 90%;
+}
+
+div.question.done {
+  background-color: #EEE;
+}
+
+#questions button.selected {
+  font-weight: bold;
+}
+
+
+#close {
+  text-align: right;
+}
+
+#title {
+  font-weight: 1.3em;
+  color: #666;
+  float: left;
+}
+
+button#close {
+  float: left;
+  margin-left: 20px;
+}
+
+.clearfix {
+  clear: both;
+}

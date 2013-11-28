@@ -199,6 +199,10 @@
     "message": "Pack",
     "description": "Text for the link to pack the extension / app."
   },
+  "extensionSettingsLint": {
+    "message": "Run in Security Lint",
+    "description": "The link for running the extension lint-er."
+  },
   "packExtensionOverlay": {
     "message": "Pack Extension",
     "description": "Title of pack extension dialog."
@@ -278,5 +282,65 @@
   "managedProfileDialogDescription": {
     "message": "Applications and extensions cannot be modified by supervised users. Chrome Apps Developer Tools will be closed.",
     "description": "Content of the dialog for managed profile. It's informing a supervised user that extensions cannot be changed."
-  }
+  },
+  "lintManifest": {
+    "message": "New Manifest",
+    "description": ""
+  },
+  "lintGenerateManifest": {
+    "message": "Generate Manifest",
+    "description": ""
+  },
+  "lintClose": {
+    "message": "Close",
+    "description": ""
+  },
+  "lintQuestions": {
+    "message": "Questions",
+    "description": ""
+  },
+  "lintDetected": {
+    "message": "Detected",
+    "description": ""
+  },
+  "lintInstructions": {
+    "message": "Interact with your extension as if you wanted to demonstrate its complete functionality to somebody. Chrome Apps and Extensions Developer Tools started monitoring what's happening and will try to figure out the optimal permissions and hosts. And a few extra other things.",
+    "description": ""
+  },
+  "lintPermission": {
+    "message": "Permission",
+    "description": ""
+  },
+  "lintUsed": {
+    "message": "Used?",
+    "description": ""
+  },
+  "lintCSPResource": {
+    "message": "Resource",
+    "description": ""
+  },
+  "lintCSPType": {
+    "message": "Type",
+    "description": ""
+  }/*,
+  "": {
+    "message": "",
+    "description": ""
+  },
+  "": {
+    "message": "",
+    "description": ""
+  },
+  "": {
+    "message": "",
+    "description": ""
+  },
+  "": {
+    "message": "",
+    "description": ""
+  },
+  "": {
+    "message": "",
+    "description": ""
+  }*/
 }

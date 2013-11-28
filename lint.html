@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<!--
+
+Copyright (c) 2013 The Chromium Authors. All rights reserved.
+Use of this source code is governed by a BSD-style license that can be
+found in the LICENSE file.
+-->
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/chromium/chrome_shared.css">
+    <link rel="stylesheet" href="css/chromium/alert_overlay.css">
+    <link rel="stylesheet" href="css/chromium/tabs.css">
+    <link rel="stylesheet" href="css/chromium/overlay.css">
+    <link rel="stylesheet" href="css/chromium/trash.css">
+    <link rel="stylesheet" href="css/chromium/uber_shared.css">
+    <link rel="stylesheet" href="css/pack_item_overlay.css">
+    <link rel="stylesheet" href="css/items.css">
+    <link rel="stylesheet" href="css/lint.css">
+
+    <script src="js/chromium/assert.js"></script>
+    <script src="js/chromium/cr.js"></script>
+    <script src="js/chromium/ui.js"></script>
+    <script src="js/chromium/alert_overlay.js"></script>
+    <script src="js/chromium/focus_outline_manager.js"></script>
+    <script src="js/chromium/i18n_template_no_process.js"></script>
+    <script src="js/chromium/load_time_data.js"></script>
+    <script src="js/chromium/overlay.js"></script>
+    <script src="js/chromium/tabs.js"></script>
+    <script src="js/chromium/uber_utils.js"></script>
+    <script src="js/chromium/util.js"></script>
+    <script src="js/main_scripts.js"></script>
+    <script src="js/items.js"></script>
+    <script src="js/items_list.js"></script>
+    <script src="js/pack_item_overlay.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/lint.js"></script>
+
+  </head>
+  <body id="lint">
+    <h1 id="title">Chrome Apps and Extensions Security Lint</h1>
+    <button class="" i18n-content="lintClose" id="close"></button>
+
+    <div class="clearfix"></div>
+
+    <div id="error" class="alert alert-danger">
+    </div>
+
+    <p i18n-content="lintInstructions"></p>
+
+    <h1 class="title" i18n-content="lintQuestions"></h1>
+    <div id="questions" class="">
+      <h1 class="title" i18n-content="lintDetected"></h1>
+      <div class="" id="permissions">
+        <p>
+        <table class="table table-condensed table-bordered">
+          <tr>
+            <th i18n-content="lintPermission"></th>
+            <th i18n-content="lintUsed"></th>
+          </tr>
+
+        </table>
+      </div>
+
+      <p>
+      <div class="" id="webresources">
+        <table class="table table-condensed table-bordered">
+          <tr>
+            <th i18n-content="lintCSPResource"></th>
+            <th i18n-content="lintCSPType"></th>
+            <th i18n-content="lintUsed"></th>
+          </tr>
+
+        </table>
+      </div>
+
+    </div>
+
+    <h1 class="title" i18n-content="lintManifest"></h1>
+    <pre id="results"></pre>
+
+  </body>
+</html>
